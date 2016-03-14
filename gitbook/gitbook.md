@@ -10,3 +10,10 @@
     ❯ gitbook -V
     2.1.2
     ```
+- 初始化 gitbook
+    ```
+    gitbook init
+    ```
+
+- [gitbook 简明教程](http://www.chengweiyang.cn/gitbook/index.html)
+
