@@ -12,7 +12,7 @@ if [ $# == 1 ]
 then
     git add .
     git ci -a -m "$1"
-    ghp-import -m $1 _book -p
+    ghp-import -m "$1" _book -p
 else
     git add .
     git ci -a -m "update data"
