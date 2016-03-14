@@ -1,4 +1,3 @@
 # Introduction
 
-
-This is a book powered by [GitBook](https://github.com/GitbookIO/gitbook).
+先记录，有时间整理再写 blog。
