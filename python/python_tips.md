@@ -13,7 +13,9 @@
             }
         }
     }
+    ```
 
+    ```
     ❯ python -m json.tool README.md
     No JSON object could be decoded
     ```

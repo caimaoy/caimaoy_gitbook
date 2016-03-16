@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
+        
+    
+        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
@@ -49,11 +53,11 @@
         
         
     <div class="book"
-        data-level="1.1"
+        data-level="2.1"
         data-chapter-title="Mac OS FAQ"
         data-filepath="mac_os/mac_os_faq.md"
         data-basepath=".."
-        data-revision="Tue Mar 15 2016 21:14:28 GMT+0800 (CST)"
+        data-revision="Wed Mar 16 2016 15:08:01 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -82,14 +86,50 @@
             
         </li>
     
-        <li class="chapter " data-level="1" data-path="mac_os/mac_os.html">
+        <li class="chapter " data-level="1" data-path="python/python.html">
+            
+                
+                    <a href="../python/python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Python
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="python/python_tips.html">
+            
+                
+                    <a href="../python/python_tips.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Python tips
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="mac_os/mac_os.html">
             
                 
                     <a href="../mac_os/mac_os.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.</b>
+                            <b>2.</b>
                         
                         Mac OS
                     </a>
@@ -98,14 +138,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1" data-path="mac_os/mac_os_faq.html">
+        <li class="chapter active" data-level="2.1" data-path="mac_os/mac_os_faq.html">
             
                 
                     <a href="../mac_os/mac_os_faq.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.1.</b>
+                            <b>2.1.</b>
                         
                         Mac OS FAQ
                     </a>
@@ -113,14 +153,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="mac_os/section1.2.html">
+        <li class="chapter " data-level="2.2" data-path="mac_os/section1.2.html">
             
                 
                     <a href="../mac_os/section1.2.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.2.</b>
+                            <b>2.2.</b>
                         
                         Mac OS 2
                     </a>
@@ -133,14 +173,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2" data-path="gitbook/gitbook.html">
+        <li class="chapter " data-level="3" data-path="gitbook/gitbook.html">
             
                 
                     <a href="../gitbook/gitbook.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.</b>
+                            <b>3.</b>
                         
                         gitbook
                     </a>
@@ -148,14 +188,14 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="domain/domain.html">
+        <li class="chapter " data-level="4" data-path="domain/domain.html">
             
                 
                     <a href="../domain/domain.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>3.</b>
+                            <b>4.</b>
                         
                         domain
                     </a>
@@ -163,14 +203,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4" data-path="util/tools.html">
+        <li class="chapter " data-level="5" data-path="util/tools.html">
             
                 
                     <a href="../util/tools.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.</b>
+                            <b>5.</b>
                         
                         Util
                     </a>
@@ -237,6 +277,14 @@
 <script src="../gitbook/app.js"></script>
 
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
     <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
@@ -258,7 +306,7 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    var config = {"disqus":{"shortName":"caimaoygitbook","useIdentifier":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
     gitbook.start(config);
 });
 </script>
