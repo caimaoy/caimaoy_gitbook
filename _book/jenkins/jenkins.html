@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Mac OS 2 | Introduction</title>
+        <title>Jenkins | Introduction</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../jenkins/jenkins.html" />
+    <link rel="next" href="../gitbook/gitbook.html" />
     
     
-    <link rel="prev" href="../mac_os/mac_os_faq.html" />
+    <link rel="prev" href="../mac_os/section1.2.html" />
     
 
         
@@ -53,9 +53,9 @@
         
         
     <div class="book"
-        data-level="2.2"
-        data-chapter-title="Mac OS 2"
-        data-filepath="mac_os/section1.2.md"
+        data-level="3"
+        data-chapter-title="Jenkins"
+        data-filepath="jenkins/jenkins.md"
         data-basepath=".."
         data-revision="Thu Mar 17 2016 11:06:36 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -153,7 +153,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="mac_os/section1.2.html">
+        <li class="chapter " data-level="2.2" data-path="mac_os/section1.2.html">
             
                 
                     <a href="../mac_os/section1.2.html">
@@ -173,7 +173,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="jenkins/jenkins.html">
+        <li class="chapter active" data-level="3" data-path="jenkins/jenkins.html">
             
                 
                     <a href="../jenkins/jenkins.html">
@@ -266,7 +266,22 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="mac-os-2">Mac OS 2</h1>
+                        <h1 id="jenkins">Jenkins</h1>
+<ul>
+<li>&#x89E3;&#x51B3; robot &#x62A5;&#x544A;&#x5728; jekins &#x4E2D;&#x65E0;&#x6CD5;&#x663E;&#x793A;&#x95EE;&#x9898;
+  Jenkins &#x88C5;&#x4E0A; robot &#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x540E;&#x751F;&#x6210; report &#x548C; log&#xFF0C;&#x4F46;&#x662F; Opening Robot Framework report failed &#x9519;&#x8BEF;
+  &#x9519;&#x8BEF;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x4E3A;&#x4E0D;&#x80FD;&#x8FD0;&#x884C; js&#xFF0C;&#x8FD8;&#x6709;&#x9632;&#x5FA1;&#x8DE8;&#x7AD9;&#x70B9;&#x653B;&#x51FB;&#xFF08;&#x4E0D;&#x592A;&#x4E86;&#x89E3;&#xFF0C;&#x4E4B;&#x540E;&#x4E86;&#x89E3;&#xFF09;<ul>
+<li><a href="https://groups.google.com/forum/#!topic/robotframework-users/58Gxyxm9gns" target="_blank">&#x89E3;&#x51B3;&#x65B9;&#x6848;</a>
+&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x662F; Google &#x7684;&#x7F51;&#x9875;&#xFF0C;&#x6211;&#x7FFB;&#x8BD1;&#x4E00;&#x4E0B;<pre><code>&lt;arguments&gt;-Xrs -Xmx256m -Dhudson.model.DirectoryBrowserSupport.CSP= -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar &quot;%BASE%\jenkins.war&quot; --httpPort=8080&lt;/arguments&gt;
+</code></pre>&#x5173;&#x952E;&#x8981;&#x6DFB;&#x52A0;<pre><code>-Xrs -Xmx256m -Dhudson.model.DirectoryBrowserSupport.CSP=
+</code></pre>&#x6211;&#x4F7F;&#x7528;&#x7684; Jenkins &#x662F;&#x90E8;&#x7F72;&#x5728; CentOs &#x4E0A;&#x9762;&#x7684;&#xFF0C;&#x4FEE;&#x6539;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;(su -)&#xFF1A;<pre><code>vi /etc/sysconfig/jenkins
+</code></pre>&#x66FF;&#x6362;&#xFF1A;<pre><code>JENKINS_JAVA_OPTIONS=&quot;-Djava.awt.headless=true&quot;
+</code></pre><pre><code>JENKINS_JAVA_OPTIONS=&quot;-Djava.awt.headless=true -Xrs -Xmx256m -Dhudson.model.DirectoryBrowserSupport.CSP=\&quot;\&quot;&quot;
+</code></pre>&#x91CD;&#x542F; Jenkins<pre><code>service jenkins restart
+</code></pre></li>
+</ul>
+</li>
+</ul>
 
                     
                     </section>
@@ -277,10 +292,10 @@
         </div>
 
         
-        <a href="../mac_os/mac_os_faq.html" class="navigation navigation-prev " aria-label="Previous page: Mac OS FAQ"><i class="fa fa-angle-left"></i></a>
+        <a href="../mac_os/section1.2.html" class="navigation navigation-prev " aria-label="Previous page: Mac OS 2"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../jenkins/jenkins.html" class="navigation navigation-next " aria-label="Next page: Jenkins"><i class="fa fa-angle-right"></i></a>
+        <a href="../gitbook/gitbook.html" class="navigation navigation-next " aria-label="Next page: gitbook"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
