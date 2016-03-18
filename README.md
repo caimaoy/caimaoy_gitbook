@@ -1,3 +1,3 @@
 # Introduction
 
-先记录，有时间整理再写 blog。
+经验记录，请访问 [http://caimaoy.com/caimaoy_gitbook/](http://caimaoy.com/caimaoy_gitbook/)
