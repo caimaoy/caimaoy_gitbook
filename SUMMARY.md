@@ -8,4 +8,5 @@
 * [Jenkins](jenkins/jenkins.md)
 * [gitbook](gitbook/gitbook.md)
 * [domain](domain/domain.md)
+* [Oh My ZSH](oh_my_zsh/oh_my_zsh.md)
 * [Util](util/tools.md)
