@@ -1,4 +1,9 @@
 {
+    "title": "caimaoy_gitbook",
+    "description": "caimaoy's gitbook, 记录码农的点点滴滴",
+    "author": "caimaoy",
+    "github": "caimaoy",
+    "githubHost": "https://github.com/",
     "plugins": ["disqus", "ga"],
     "pluginsConfig": {
         "disqus": {
@@ -10,6 +15,19 @@
                 "cookieName": "new_cookie_name",
                 "cookieDomain": "mynew.domain.com"
             }
+        }
+    },
+
+    "links": {
+    	"sidebar": {
+    	    "caimaoy's blog": "http://www.caimaoy.com"
+    	},
+        "sharing": {
+            "google": "caimaoy",
+            "facebook": "caimaoy",
+            "twitter": "caimaoy",
+            "weibo": "caimaoy",
+            "all": "caimaoy"
         }
     }
 }
