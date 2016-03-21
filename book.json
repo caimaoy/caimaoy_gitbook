@@ -11,10 +11,6 @@
         },
         "ga": {
             "token": "UA-58273323-3",
-            "configuration": {
-                "cookieName": "new_cookie_name",
-                "cookieDomain": "mynew.domain.com"
-            }
         }
     },
 
