@@ -15,5 +15,10 @@
     gitbook init
     ```
 
+- 启动 gitbook server
+    ```
+    gitbook serve
+    ```
+
 - [gitbook 简明教程](http://www.chengweiyang.cn/gitbook/index.html)
 
