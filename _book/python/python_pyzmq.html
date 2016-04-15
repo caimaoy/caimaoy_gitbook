@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Mac OS | caimaoy_gitbook</title>
+        <title>Python pyzmq | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../mac_os/mac_os_faq.html" />
+    <link rel="next" href="../mac_os/mac_os.html" />
     
     
-    <link rel="prev" href="../python/python_pyzmq.html" />
+    <link rel="prev" href="../python/python_virtualenv.html" />
     
 
         
@@ -53,9 +53,9 @@
         
         
     <div class="book"
-        data-level="2"
-        data-chapter-title="Mac OS"
-        data-filepath="mac_os/mac_os.md"
+        data-level="1.3"
+        data-chapter-title="Python pyzmq"
+        data-filepath="python/python_pyzmq.md"
         data-basepath=".."
         data-revision="Fri Apr 15 2016 18:57:05 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -139,7 +139,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="python/python_pyzmq.html">
+        <li class="chapter active" data-level="1.3" data-path="python/python_pyzmq.html">
             
                 
                     <a href="../python/python_pyzmq.html">
@@ -159,7 +159,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2" data-path="mac_os/mac_os.html">
+        <li class="chapter " data-level="2" data-path="mac_os/mac_os.html">
             
                 
                     <a href="../mac_os/mac_os.html">
@@ -318,7 +318,34 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="mac-os">Mac OS</h1>
+                        <h1 id="python-pyzmq">Python pyzmq</h1>
+<ul>
+<li><p>&#x7ED9;pyzmq &#x6DFB;&#x52A0;&#x8D85;&#x65F6;&#x65F6;&#x95F4;
+  &#x8BE6;&#x60C5;&#x8BF7;&#x89C1;<a href="https://github.com/zeromq/pyzmq/issues/132" target="_blank">github</a></p>
+<pre><code>  import sys
+  import zmq
+
+  # None of these operations will block, regardless of peer:
+  context = zmq.Context()
+  socket = context.socket(zmq.REQ)
+  socket.setsockopt(zmq.LINGER, 0)
+  socket.connect(&quot;tcp://127.0.0.1:12346&quot;)
+  socket.send_json({&quot;msg&quot;: &quot;testmsg&quot;}) # send can block on other socket types, so keep track
+  # use poll for timeouts:
+  poller = zmq.Poller()
+  poller.register(socket, zmq.POLLIN)
+  if poller.poll(10*1000): # 10s timeout in milliseconds
+      msg = socket.recv_json()
+  else:
+      raise IOError(&quot;Timeout processing auth request&quot;)
+
+  # these are not necessary, but still good practice:
+  socket.close()
+  context.term()
+
+  sys.exit(0)
+</code></pre></li>
+</ul>
 
                     
                     </section>
@@ -329,10 +356,10 @@
         </div>
 
         
-        <a href="../python/python_pyzmq.html" class="navigation navigation-prev " aria-label="Previous page: Python pyzmq"><i class="fa fa-angle-left"></i></a>
+        <a href="../python/python_virtualenv.html" class="navigation navigation-prev " aria-label="Previous page: Python virtualenv"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../mac_os/mac_os_faq.html" class="navigation navigation-next " aria-label="Next page: Mac OS FAQ"><i class="fa fa-angle-right"></i></a>
+        <a href="../mac_os/mac_os.html" class="navigation navigation-next " aria-label="Next page: Mac OS"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
