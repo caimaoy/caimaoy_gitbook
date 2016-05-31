@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Python virtualenv | caimaoy_gitbook</title>
+        <title>Python sqlalchemy | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../python/python_pyzmq.html" />
+    <link rel="next" href="../mac_os/mac_os.html" />
     
     
-    <link rel="prev" href="../python/python_tips.html" />
+    <link rel="prev" href="../python/python_pyzmq.html" />
     
 
         
@@ -53,9 +53,9 @@
         
         
     <div class="book"
-        data-level="1.2"
-        data-chapter-title="Python virtualenv"
-        data-filepath="python/python_virtualenv.md"
+        data-level="1.4"
+        data-chapter-title="Python sqlalchemy"
+        data-filepath="python/python_sqlalchemy.md"
         data-basepath=".."
         data-revision="Tue May 31 2016 17:37:27 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -124,7 +124,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="python/python_virtualenv.html">
+        <li class="chapter " data-level="1.2" data-path="python/python_virtualenv.html">
             
                 
                     <a href="../python/python_virtualenv.html">
@@ -154,7 +154,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="python/python_sqlalchemy.html">
+        <li class="chapter active" data-level="1.4" data-path="python/python_sqlalchemy.html">
             
                 
                     <a href="../python/python_sqlalchemy.html">
@@ -333,15 +333,66 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="python-virtualenv">Python virtualenv</h1>
+                        <h1 id="python-sqlalchemy">Python sqlalchemy</h1>
 <ul>
-<li>&#x5982;&#x4F55;&#x5728; virtualenv &#x4E2D;&#x4F7F;&#x7528; google.protobuf &#xFF1F;<ol>
-<li>&#x8FDB;&#x5165; virtualenv</li>
-<li>&#x5728;&#x4E0B;&#x8F7D;&#x7684; pb &#x5B89;&#x88C5;&#x5305;&#x4E2D; python setup.py install</li>
+<li>&#x4F7F;&#x7528;SQLAlchemy&#x65F6;&#x9047;&#x5230;&quot;#2006: MySQL server has gone away&quot;</li>
+<li>&#x539F;&#x56E0;&#xFF1A;<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5728; mysql &#x4E2D;&#x5173;&#x95ED;&#x7684; session</li>
+<li>mysql &#x4E2D;&#x9ED8;&#x8BA4;&#x662F; 8 &#x5C0F;&#x65F6;&#x5173;&#x95ED;</li>
+</ul>
+</li>
+<li><p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x8BBE;&#x7F6E;SQLAlchemy&#x7684;&#x8FDE;&#x63A5;&#x6709;&#x6548;&#x671F;&#xFF0C;&#x5728;MySQL&#x5173;&#x95ED;&#x5B83;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x5148;&#x5173;&#x95ED;&#x5B83;&#x3002;</li>
+<li>&#x5728;Web&#x6846;&#x67B6;&#x7684;&#x5C42;&#x9762;&#xFF0C;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#x65F6;&#xFF0C;&#x663E;&#x5F0F;&#x5730;&#x5173;&#x95ED;session&#x3002;</li>
+<li>&#x5728;&#x4F7F;&#x7528;session&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x68C0;&#x67E5;&#x5176;&#x6709;&#x6548;&#x6027;&#xFF0C;&#x65E0;&#x6548;&#x5219;&#x521B;&#x5EFA;&#x65B0;&#x7684;session&#x4EE5;&#x4F9B;&#x4F7F;&#x7528;&#x3002;</li>
 </ol>
 </li>
+<li><p>&#x53C2;&#x8003; <a href="http://www.wangjunbo.com/?p=34" target="_blank">blog</a></p>
+</li>
+<li>&#x53C2;&#x8003;<a href="http://docs.sqlalchemy.org/en/latest/core/pooling.html#disconnect-handling-pessimistic" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></li>
 </ul>
+<pre><code>from sqlalchemy import exc
+from sqlalchemy import event
+from sqlalchemy import select
 
+some_engine = create_engine(...)
+
+@event.listens_for(some_engine, &quot;engine_connect&quot;)
+def ping_connection(connection, branch):
+    if branch:
+        # &quot;branch&quot; refers to a sub-connection of a connection,
+        # we don&apos;t want to bother pinging on these.
+        return
+
+    # turn off &quot;close with result&quot;.  This flag is only used with
+    # &quot;connectionless&quot; execution, otherwise will be False in any case
+    save_should_close_with_result = connection.should_close_with_result
+    connection.should_close_with_result = False
+
+    try:
+        # run a SELECT 1.   use a core select() so that
+        # the SELECT of a scalar value without a table is
+        # appropriately formatted for the backend
+        connection.scalar(select([1]))
+    except exc.DBAPIError as err:
+        # catch SQLAlchemy&apos;s DBAPIError, which is a wrapper
+        # for the DBAPI&apos;s exception.  It includes a .connection_invalidated
+        # attribute which specifies if this connection is a &quot;disconnect&quot;
+        # condition, which is based on inspection of the original exception
+        # by the dialect in use.
+        if err.connection_invalidated:
+            # run the same SELECT again - the connection will re-validate
+            # itself and establish a new connection.  The disconnect detection
+            # here also causes the whole connection pool to be invalidated
+            # so that all stale connections are discarded.
+            connection.scalar(select([1]))
+        else:
+            raise
+    finally:
+        # restore &quot;close with result&quot;
+        connection.should_close_with_result = save_should_close_with_result
+</code></pre>
                     
                     </section>
                 
@@ -351,10 +402,10 @@
         </div>
 
         
-        <a href="../python/python_tips.html" class="navigation navigation-prev " aria-label="Previous page: Python tips"><i class="fa fa-angle-left"></i></a>
+        <a href="../python/python_pyzmq.html" class="navigation navigation-prev " aria-label="Previous page: Python pyzmq"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../python/python_pyzmq.html" class="navigation navigation-next " aria-label="Next page: Python pyzmq"><i class="fa fa-angle-right"></i></a>
+        <a href="../mac_os/mac_os.html" class="navigation navigation-next " aria-label="Next page: Mac OS"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
