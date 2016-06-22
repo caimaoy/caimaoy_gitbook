@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Python | caimaoy_gitbook</title>
+        <title>nginx | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../python/python_tips.html" />
+    <link rel="next" href="../oh_my_zsh/oh_my_zsh.html" />
     
     
-    <link rel="prev" href="../index.html" />
+    <link rel="prev" href="../domain/domain.html" />
     
 
         
@@ -53,9 +53,9 @@
         
         
     <div class="book"
-        data-level="1"
-        data-chapter-title="Python"
-        data-filepath="python/python.md"
+        data-level="6"
+        data-chapter-title="nginx"
+        data-filepath="nginx/nginx.md"
         data-basepath=".."
         data-revision="Wed Jun 22 2016 15:13:46 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -93,7 +93,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="python/python.html">
+        <li class="chapter " data-level="1" data-path="python/python.html">
             
                 
                     <a href="../python/python.html">
@@ -270,7 +270,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6" data-path="nginx/nginx.html">
+        <li class="chapter active" data-level="6" data-path="nginx/nginx.html">
             
                 
                     <a href="../nginx/nginx.html">
@@ -348,8 +348,19 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="python">Python</h1>
-
+                        <h1 id="nginx">nginx</h1>
+<h2 id="nginx-&#x6362;&#x57DF;&#x540D;&#x91CD;&#x5B9A;&#x5411;">Nginx &#x6362;&#x57DF;&#x540D;&#x91CD;&#x5B9A;&#x5411;</h2>
+<ul>
+<li>&#x6BD4;&#x5982;&#x7F51;&#x7AD9;&#x7684;&#x65E7;&#x57DF;&#x540D;&#x662F; baidu.com&#xFF0C;&#x65B0;&#x57DF;&#x540D;&#x662F; google.com &#x3002;&#x73B0;&#x5728;google.com &#x5DF2;&#x7ECF;&#x4E0A;&#x7EBF;&#x3002;</li>
+</ul>
+<pre><code>server
+    {
+        listen       80;
+        server_name baidu.com;
+        rewrite ^/(.*)$ http://google.com/$1 permanent;
+        access_log off;
+    }
+</code></pre>
                     
                     </section>
                 
@@ -359,10 +370,10 @@
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        <a href="../domain/domain.html" class="navigation navigation-prev " aria-label="Previous page: domain"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../python/python_tips.html" class="navigation navigation-next " aria-label="Next page: Python tips"><i class="fa fa-angle-right"></i></a>
+        <a href="../oh_my_zsh/oh_my_zsh.html" class="navigation navigation-next " aria-label="Next page: Oh My ZSH"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
