@@ -57,7 +57,7 @@
         data-chapter-title="Mac OS FAQ"
         data-filepath="mac_os/mac_os_faq.md"
         data-basepath=".."
-        data-revision="Sun Jul 24 2016 15:08:35 GMT+0800 (CST)"
+        data-revision="Sun Jul 24 2016 15:41:24 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -353,8 +353,19 @@
 <li><a href="https://www.quora.com/How-do-I-turn-off-the-rootless-in-OS-X-El-Capitan-10-11" target="_blank">Turn off the rootless in OS X El Capitan 10.11</a></li>
 <li>&#x5F3A;&#x5236;&#x4F7F;&#x7528; 32 &#x4F4D;&#xFF1A;<pre><code>  defaults write com.apple.versioner.python Prefer-32-Bit -bool yes
 </code></pre></li>
-<li>&#x53BB;&#x6389;&#x5F3A;&#x5236;&#x4F7F;&#x7528; 32 &#x4F4D;&#xFF1A;<pre><code>  defaults write com.apple.versioner.python Prefer-32-Bit -bool no
+<li><p>&#x53BB;&#x6389;&#x5F3A;&#x5236;&#x4F7F;&#x7528; 32 &#x4F4D;&#xFF1A;</p>
+<pre><code>  defaults write com.apple.versioner.python Prefer-32-Bit -bool no
 </code></pre></li>
+<li><p>&#x82F9;&#x679C; Mac OS X &#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>&#x65E9;&#x671F;&#x7684;OS X&#xFF08;10.6~10.8&#xFF09;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x6765;&#x5F00;&#x59CB;&#x6216;&#x8005;&#x5173;&#x95ED;&#x7CFB;&#x7EDF;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x663E;&#x793A;&#xFF1A;<pre><code>defaults write com.apple.Finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
+defaults write com.apple.Finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
+</code></pre></li>
+<li>&#x5F53;&#x5347;&#x7EA7;&#x5230;OS X 10.9 Mavericks&#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x4FEE;&#x6539;&#xFF0C;&#x53D8;&#x6210;&#x4E86;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<pre><code>defaults write com.apple.finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
+defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
+</code></pre></li>
+</ul>
+</li>
 </ul>
 
                     
