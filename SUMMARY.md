@@ -5,6 +5,7 @@
   - [Python virtualenv](python/python_virtualenv.md)
   - [Python pyzmq](python/python_pyzmq.md)
   - [Python sqlalchemy](python/python_sqlalchemy.md)
+  - [Python execute](python/python_execute.md)
 * [Mac OS](mac_os/mac_os.md)
   - [Mac OS FAQ](mac_os/mac_os_faq.md)
   - [Mac OS 2](mac_os/section1.2.md)
