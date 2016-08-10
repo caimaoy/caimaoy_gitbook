@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Mac OS FAQ | caimaoy_gitbook</title>
+        <title>Python execute | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../mac_os/section1.2.html" />
+    <link rel="next" href="../mac_os/mac_os.html" />
     
     
-    <link rel="prev" href="../mac_os/mac_os.html" />
+    <link rel="prev" href="../python/python_sqlalchemy.html" />
     
 
         
@@ -53,9 +53,9 @@
         
         
     <div class="book"
-        data-level="2.1"
-        data-chapter-title="Mac OS FAQ"
-        data-filepath="mac_os/mac_os_faq.md"
+        data-level="1.5"
+        data-chapter-title="Python execute"
+        data-filepath="python/python_execute.md"
         data-basepath=".."
         data-revision="Wed Aug 10 2016 18:46:34 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -169,7 +169,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="python/python_execute.html">
+        <li class="chapter active" data-level="1.5" data-path="python/python_execute.html">
             
                 
                     <a href="../python/python_execute.html">
@@ -205,7 +205,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1" data-path="mac_os/mac_os_faq.html">
+        <li class="chapter " data-level="2.1" data-path="mac_os/mac_os_faq.html">
             
                 
                     <a href="../mac_os/mac_os_faq.html">
@@ -363,26 +363,34 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="mac-os-faq">Mac OS FAQ</h1>
-<ul>
-<li><a href="https://www.quora.com/How-do-I-turn-off-the-rootless-in-OS-X-El-Capitan-10-11" target="_blank">Turn off the rootless in OS X El Capitan 10.11</a></li>
-<li>&#x5F3A;&#x5236;&#x4F7F;&#x7528; 32 &#x4F4D;&#xFF1A;<pre><code>  defaults write com.apple.versioner.python Prefer-32-Bit -bool yes
-</code></pre></li>
-<li><p>&#x53BB;&#x6389;&#x5F3A;&#x5236;&#x4F7F;&#x7528; 32 &#x4F4D;&#xFF1A;</p>
-<pre><code>  defaults write com.apple.versioner.python Prefer-32-Bit -bool no
-</code></pre></li>
-<li><p>&#x82F9;&#x679C; Mac OS X &#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</p>
-<ul>
-<li>&#x65E9;&#x671F;&#x7684;OS X&#xFF08;10.6~10.8&#xFF09;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x6765;&#x5F00;&#x59CB;&#x6216;&#x8005;&#x5173;&#x95ED;&#x7CFB;&#x7EDF;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x663E;&#x793A;&#xFF1A;<pre><code>defaults write com.apple.Finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-defaults write com.apple.Finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-</code></pre></li>
-<li>&#x5F53;&#x5347;&#x7EA7;&#x5230;OS X 10.9 Mavericks&#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x4FEE;&#x6539;&#xFF0C;&#x53D8;&#x6210;&#x4E86;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<pre><code>defaults write com.apple.finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-</code></pre></li>
-</ul>
-</li>
-</ul>
-
+                        <h1 id="python-execute">Python execute</h1>
+<h2 id="&#x8FD0;&#x884C;&#x76EE;&#x5F55;&#x6216;&#x538B;&#x7F29;&#x6587;&#x4EF6;">&#x8FD0;&#x884C;&#x76EE;&#x5F55;&#x6216;&#x538B;&#x7F29;&#x6587;&#x4EF6;</h2>
+<hr>
+<h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2>
+<p>&#x60A8;&#x6709;&#x4E00;&#x4E2A;&#x5DF2;&#x6210;&#x957F;&#x4E3A;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5B83;&#x5DF2;&#x8FDC;&#x4E0D;&#x518D;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x811A;&#x672C;&#xFF0C;&#x4F60;&#x60F3;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x3002;</p>
+<hr>
+<h2 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5DF2;&#x7ECF;&#x6709;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x653E;&#x8FDB;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x76EE;&#x5F55;&#x5E76;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;__main__.py&#x6587;&#x4EF6;&#x3002; &#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x521B;&#x5EFA;&#x76EE;&#x5F55;&#xFF1A;</p>
+<pre><code>myapplication/
+    spam.py
+    bar.py
+    grok.py
+    __main__.py
+</code></pre><p>&#x5982;&#x679C;__main__.py&#x5B58;&#x5728;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x5728;&#x9876;&#x7EA7;&#x76EE;&#x5F55;&#x8FD0;&#x884C;Python&#x89E3;&#x91CA;&#x5668;&#xFF1A;</p>
+<pre><code>bash % python myapplication
+</code></pre><p>&#x89E3;&#x91CA;&#x5668;&#x5C06;&#x6267;&#x884C;__main__.py&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x4E3B;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5C06;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x6253;&#x5305;&#x6210;zip&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x79CD;&#x6280;&#x672F;&#x540C;&#x6837;&#x4E5F;&#x9002;&#x7528;&#xFF0C;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>bash % ls
+spam.py bar.py grok.py __main__.py
+bash % zip -r myapp.zip *.py
+bash % python myapp.zip
+... output from __main__.py ...
+</code></pre><hr>
+<h2 id="&#x8BA8;&#x8BBA;">&#x8BA8;&#x8BBA;</h2>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x6216;zip&#x6587;&#x4EF6;&#x5E76;&#x6DFB;&#x52A0;__main__.py&#x6587;&#x4EF6;&#x6765;&#x5C06;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7684;Python&#x5E94;&#x7528;&#x6253;&#x5305;&#x662F;&#x53EF;&#x884C;&#x7684;&#x3002;&#x8FD9;&#x548C;&#x4F5C;&#x4E3A;&#x6807;&#x51C6;&#x5E93;&#x88AB;&#x5B89;&#x88C5;&#x5230;Python&#x5E93;&#x7684;&#x4EE3;&#x7801;&#x5305;&#x662F;&#x6709;&#x4E00;&#x70B9;&#x533A;&#x522B;&#x7684;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x8FD9;&#x53EA;&#x662F;&#x8BA9;&#x522B;&#x4EBA;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x5305;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x76EE;&#x5F55;&#x548C;zip&#x6587;&#x4EF6;&#x4E0E;&#x6B63;&#x5E38;&#x6587;&#x4EF6;&#x6709;&#x4E00;&#x70B9;&#x4E0D;&#x540C;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x8FD8;&#x9700;&#x8981;&#x589E;&#x52A0;&#x4E00;&#x4E2A;shell&#x811A;&#x672C;&#xFF0C;&#x4F7F;&#x6267;&#x884C;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x540D;&#x4E3A;myapp.zip&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x9876;&#x7EA7;&#x811A;&#x672C;&#xFF1A;</p>
+<pre><code>#!/usr/bin/env python /usr/local/bin/myapp.zip
+</code></pre>
                     
                     </section>
                 
@@ -392,10 +400,10 @@ defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder /
         </div>
 
         
-        <a href="../mac_os/mac_os.html" class="navigation navigation-prev " aria-label="Previous page: Mac OS"><i class="fa fa-angle-left"></i></a>
+        <a href="../python/python_sqlalchemy.html" class="navigation navigation-prev " aria-label="Previous page: Python sqlalchemy"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../mac_os/section1.2.html" class="navigation navigation-next " aria-label="Next page: Mac OS 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../mac_os/mac_os.html" class="navigation navigation-next " aria-label="Next page: Mac OS"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
