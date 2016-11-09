@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Python | caimaoy_gitbook</title>
+        <title>Python decorator cheat | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -45,10 +45,10 @@
         
     
     
-    <link rel="next" href="../python/python_tips.html" />
+    <link rel="next" href="../mac_os/mac_os.html" />
     
     
-    <link rel="prev" href="../index.html" />
+    <link rel="prev" href="../python/python_debug.html" />
     
 
         
@@ -57,9 +57,9 @@
         
         
     <div class="book"
-        data-level="1"
-        data-chapter-title="Python"
-        data-filepath="python/python.md"
+        data-level="1.7"
+        data-chapter-title="Python decorator cheat"
+        data-filepath="python/python_decorator_cheat.md"
         data-basepath=".."
         data-revision="Wed Nov 09 2016 15:03:45 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -97,7 +97,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="python/python.html">
+        <li class="chapter " data-level="1" data-path="python/python.html">
             
                 
                     <a href="../python/python.html">
@@ -203,7 +203,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="python/python_decorator_cheat.html">
+        <li class="chapter active" data-level="1.7" data-path="python/python_decorator_cheat.html">
             
                 
                     <a href="../python/python_decorator_cheat.html">
@@ -397,8 +397,30 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="python">Python</h1>
-
+                        <h1 id="python-decorator-cheat">Python decorator cheat</h1>
+<ul>
+<li>A decorator without arguments</li>
+</ul>
+<pre><code>def decorator(f):
+    @functools.wraps(f)
+    def wrapped(*args, **kwargs):
+        results = f(*args, **kwargs)
+        # do something
+        return results
+    return wrapped
+</code></pre><ul>
+<li>A Decorator with arguments</li>
+</ul>
+<pre><code>def decorator_args(a, b, c):
+    def decorator(f):
+        @functools.wraps(f)
+        def wrapped(*args, **kwargs):
+            results = f(*args, **kwargs)
+            # do something
+            return results
+        return wrapped
+    return decorator
+</code></pre>
                     
                     </section>
                 
@@ -408,10 +430,10 @@
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        <a href="../python/python_debug.html" class="navigation navigation-prev " aria-label="Previous page: Python debug"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../python/python_tips.html" class="navigation navigation-next " aria-label="Next page: Python tips"><i class="fa fa-angle-right"></i></a>
+        <a href="../mac_os/mac_os.html" class="navigation navigation-next " aria-label="Next page: Mac OS"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
