@@ -8,6 +8,7 @@
   - [Python execute](python/python_execute.md)
   - [Python debug](python/python_debug.md)
   - [Python decorator cheat](python/python_decorator_cheat.md)
+  - [Python timeit](python/python_timeit.md)
 * [Mac OS](mac_os/mac_os.md)
   - [Mac OS FAQ](mac_os/mac_os_faq.md)
   - [Mac OS 2](mac_os/section1.2.md)
