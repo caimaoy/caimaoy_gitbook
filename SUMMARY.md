@@ -15,6 +15,7 @@
   - [Mac OS Turn off the rootless](mac_os/mac_os_turn_off_the_rootless.md)
   - [Mac OS use 32 bits](mac_os/mac_os_use_32_bits.md)
   - [Mac OS show all files](mac_os/mac_os_show_all_files.md)
+  - [Mac OS Disk Usage](mac_os/mac_os_disk_usage.md)
 * [Jenkins](jenkins/jenkins.md)
 * [gitbook](gitbook/gitbook.md)
 * [domain](domain/domain.md)
