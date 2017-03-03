@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Mac OS show all files | caimaoy_gitbook</title>
+        <title>Mac OS Disk Usage | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -45,10 +45,10 @@
         
     
     
-    <link rel="next" href="../mac_os/mac_os_disk_usage.html" />
+    <link rel="next" href="../jenkins/jenkins.html" />
     
     
-    <link rel="prev" href="../mac_os/mac_os_use_32_bits.html" />
+    <link rel="prev" href="../mac_os/mac_os_show_all_files.html" />
     
 
         
@@ -57,9 +57,9 @@
         
         
     <div class="book"
-        data-level="3.3"
-        data-chapter-title="Mac OS show all files"
-        data-filepath="mac_os/mac_os_show_all_files.md"
+        data-level="3.4"
+        data-chapter-title="Mac OS Disk Usage"
+        data-filepath="mac_os/mac_os_disk_usage.md"
         data-basepath=".."
         data-revision="Fri Mar 03 2017 14:40:52 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -320,7 +320,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="mac_os/mac_os_show_all_files.html">
+        <li class="chapter " data-level="3.3" data-path="mac_os/mac_os_show_all_files.html">
             
                 
                     <a href="../mac_os/mac_os_show_all_files.html">
@@ -335,7 +335,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="mac_os/mac_os_disk_usage.html">
+        <li class="chapter active" data-level="3.4" data-path="mac_os/mac_os_disk_usage.html">
             
                 
                     <a href="../mac_os/mac_os_disk_usage.html">
@@ -478,15 +478,19 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x82F9;&#x679C;-mac-os-x-&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;">&#x82F9;&#x679C; Mac OS X &#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</h1>
+                        <h1 id="mac-os-disk-usage">Mac OS Disk Usage</h1>
+<h2 id="mac-&#x7A81;&#x7136;&#x6CA1;&#x6709;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E86;&#xFF1F;">Mac &#x7A81;&#x7136;&#x6CA1;&#x6709;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E86;&#xFF1F;</h2>
 <ul>
-<li>&#x65E9;&#x671F;&#x7684;OS X&#xFF08;10.6~10.8&#xFF09;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x6765;&#x5F00;&#x59CB;&#x6216;&#x8005;&#x5173;&#x95ED;&#x7CFB;&#x7EDF;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x663E;&#x793A;&#xFF1A;<pre><code>defaults write com.apple.Finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-defaults write com.apple.Finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-</code></pre></li>
-<li>&#x5F53;&#x5347;&#x7EA7;&#x5230;OS X 10.9 Mavericks&#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x4FEE;&#x6539;&#xFF0C;&#x53D8;&#x6210;&#x4E86;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<pre><code>defaults write com.apple.finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-</code></pre></li>
+<li>&#x5173;&#x4E8E;&#x672C;&#x673A;&#x67E5;&#x770B;<code>&#x5176;&#x4ED6;</code>&#x7528;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x7A7A;&#x95F4;</li>
+<li><code>&#x5176;&#x4ED6;</code>&#x662F;&#x4EC0;&#x4E48;&#xFF1F; &#x5728;&#x4EC0;&#x4E48;&#x5730;&#x65B9;&#xFF1F;</li>
+<li>&#x5B89;&#x5229;&#x4E00;&#x6B3E;&#x78C1;&#x76D8;&#x626B;&#x63CF;&#x5DE5;&#x5177; <code>ncdu</code></li>
 </ul>
+<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
+<pre><code>brew install ncdu
+</code></pre><h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3>
+<pre><code>ncdu -h
+ncdu PATH
+</code></pre><p>&#x4F7F;&#x7528;&#x548C; <code>tig</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5927;&#x7231;</p>
 
                     
                     </section>
@@ -497,10 +501,10 @@ defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder /
         </div>
 
         
-        <a href="../mac_os/mac_os_use_32_bits.html" class="navigation navigation-prev " aria-label="Previous page: Mac OS use 32 bits"><i class="fa fa-angle-left"></i></a>
+        <a href="../mac_os/mac_os_show_all_files.html" class="navigation navigation-prev " aria-label="Previous page: Mac OS show all files"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../mac_os/mac_os_disk_usage.html" class="navigation navigation-next " aria-label="Next page: Mac OS Disk Usage"><i class="fa fa-angle-right"></i></a>
+        <a href="../jenkins/jenkins.html" class="navigation navigation-next " aria-label="Next page: Jenkins"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
