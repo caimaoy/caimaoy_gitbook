@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Mac OS show all files | caimaoy_gitbook</title>
+        <title>Python celery | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -45,10 +45,10 @@
         
     
     
-    <link rel="next" href="../mac_os/mac_os_disk_usage.html" />
+    <link rel="next" href="../RobotFramework/RobotFramework.html" />
     
     
-    <link rel="prev" href="../mac_os/mac_os_use_32_bits.html" />
+    <link rel="prev" href="../python/python_logging.html" />
     
 
         
@@ -57,9 +57,9 @@
         
         
     <div class="book"
-        data-level="3.3"
-        data-chapter-title="Mac OS show all files"
-        data-filepath="mac_os/mac_os_show_all_files.md"
+        data-level="1.10"
+        data-chapter-title="Python celery"
+        data-filepath="python/python_celery.md"
         data-basepath=".."
         data-revision="Mon Mar 27 2017 15:57:09 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -248,7 +248,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="python/python_celery.html">
+        <li class="chapter active" data-level="1.10" data-path="python/python_celery.html">
             
                 
                     <a href="../python/python_celery.html">
@@ -350,7 +350,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="mac_os/mac_os_show_all_files.html">
+        <li class="chapter " data-level="3.3" data-path="mac_os/mac_os_show_all_files.html">
             
                 
                     <a href="../mac_os/mac_os_show_all_files.html">
@@ -508,15 +508,32 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x82F9;&#x679C;-mac-os-x-&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;">&#x82F9;&#x679C; Mac OS X &#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</h1>
-<ul>
-<li>&#x65E9;&#x671F;&#x7684;OS X&#xFF08;10.6~10.8&#xFF09;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x6765;&#x5F00;&#x59CB;&#x6216;&#x8005;&#x5173;&#x95ED;&#x7CFB;&#x7EDF;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#x7684;&#x663E;&#x793A;&#xFF1A;<pre><code>defaults write com.apple.Finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-defaults write com.apple.Finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-</code></pre></li>
-<li>&#x5F53;&#x5347;&#x7EA7;&#x5230;OS X 10.9 Mavericks&#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x4FEE;&#x6539;&#xFF0C;&#x53D8;&#x6210;&#x4E86;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<pre><code>defaults write com.apple.finder AppleShowAllFiles Yes &amp;&amp; killall Finder //&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder //&#x4E0D;&#x663E;&#x793A;&#x9690;&#x85CF;&#x6587;&#x4EF6;
-</code></pre></li>
-</ul>
+                        <h1 id="python-celery">Python celery</h1>
+<p><code>celery</code> &#x7684;&#x4ECB;&#x7ECD;&#x548C;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6211;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8BF4;&#x4E86; <code>google</code><br>&#x6211;&#x8BF4;&#x8BF4;&#x5B83;&#x57FA;&#x4E8E;&#x7684; <code>AMQP</code> - Advanced Message Queuing Protocol<br>&#x5173;&#x952E;&#x89E3;&#x51B3;&#x4E00;&#x4E0B;&#x770B;&#x4E0D;&#x61C2;&#x7684; <code>celery</code> config</p>
+<pre><code>from kombu import Queue
+# CELERY_QUEUES = ( # &#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x961F;&#x5217;
+task_queues = (
+Queue(&apos;default&apos;, routing_key=&apos;tasks.#&apos;), # &#x8DEF;&#x7531;&#x952E;&#x4EE5;&#x201C;task.&#x201D;&#x5F00;&#x5934;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x8FDB;default&#x961F;&#x5217;
+Queue(&apos;mock_tasks&apos;, routing_key=&apos;mock.#&apos;), # &#x8DEF;&#x7531;&#x952E;&#x4EE5;&#x201C;mock.&#x201D;&#x5F00;&#x5934;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x8FDB;mock_tasks&#x961F;&#x5217;
+)
+
+
+# CELERY_ROUTES = {
+task_routes = {
+    &apos;celery_proj.mock_tasks.*&apos;: { # celery_proj.mock_tasks.* &#x7684;&#x6D88;&#x606F;&#x4F1A;&#x8FDB;&#x5165;mock_tasks &#x961F;&#x5217;
+    &apos;queue&apos;: &apos;mock_tasks&apos;,
+    &apos;routing_key&apos;: &apos;mock.#&apos;,  # &#x5728;&#x4E0A;&#x9762;&#x8BBE;&#x7F6E;&#x4E4B;&#x540E;&#xFF0C;&#x597D;&#x50CF;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x7528;
+    },
+    &apos;celery_proj.tasks.*&apos;: {
+    &apos;queue&apos;: &apos;default&apos;,
+    &apos;routing_key&apos;: &apos;tasks.#&apos;,
+    }
+}
+</code></pre><p>&#x5173;&#x952E;&#x5C31;&#x662F;&#x89E3;&#x51B3;&#x4E00;&#x4E0B; <code>AMQP messaging</code> &#x4E2D;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0B;&#x9762;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;<a href="http://www.openstack.cn/?p=4702" target="_blank">http://www.openstack.cn/?p=4702</a></p>
+<p>&#x540C;&#x65F6;&#x6587;&#x4E2D;&#x63D0;&#x5230;&#xFF1A;</p>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x4E5F;&#x63A8;&#x8350;&#x7ED9;&#x60F3;&#x8981;&#x4E86;&#x89E3; <code>RabbitMQ</code> &#x7684;&#x540C;&#x5B66;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#xFF0C;<a href="http://tryrabbitmq.com" target="_blank">http://tryrabbitmq.com</a> &#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x5728;&#x7EBF; <code>RabbitMQ</code> &#x6A21;&#x62DF;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x7406;&#x89E3;Exchange&#xFF0F;queue&#xFF0F;binding&#x6982;&#x5FF5;</p>
+</blockquote>
 
                     
                     </section>
@@ -527,10 +544,10 @@ defaults write com.apple.finder AppleShowAllFiles No &amp;&amp; killall Finder /
         </div>
 
         
-        <a href="../mac_os/mac_os_use_32_bits.html" class="navigation navigation-prev " aria-label="Previous page: Mac OS use 32 bits"><i class="fa fa-angle-left"></i></a>
+        <a href="../python/python_logging.html" class="navigation navigation-prev " aria-label="Previous page: Python logging"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../mac_os/mac_os_disk_usage.html" class="navigation navigation-next " aria-label="Next page: Mac OS Disk Usage"><i class="fa fa-angle-right"></i></a>
+        <a href="../RobotFramework/RobotFramework.html" class="navigation navigation-next " aria-label="Next page: RobotFramework"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
