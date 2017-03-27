@@ -9,6 +9,7 @@
   - [Python debug](python/python_debug.md)
   - [Python decorator cheat](python/python_decorator_cheat.md)
   - [Python timeit](python/python_timeit.md)
+  - [Python logging](python/python_logging.md)
 * [RobotFramework](RobotFramework/RobotFramework.md)
   - [RobotFramework access variables](RobotFramework/RobotFramework_access_variables.md)
 * [Mac OS](mac_os/mac_os.md)
