@@ -30,3 +30,5 @@ task_routes = {
 
 同时文中提到：
 > 这里也推荐给想要了解 `RabbitMQ` 的同学一个网站，<http://tryrabbitmq.com> ，它提供在线 `RabbitMQ` 模拟器，可以帮助理解Exchange／queue／binding概念
+
+再附上 [Celery Best Practices](<https://denibertovic.com/talks/celery-best-practices/>)
