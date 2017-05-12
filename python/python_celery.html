@@ -1,514 +1,536 @@
+
 <!DOCTYPE HTML>
-<html lang="en" >
-    
+<html lang="" >
     <head>
-        
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Python celery | caimaoy_gitbook</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python celery · caimaoy_gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="generator" content="GitBook 3.2.2">
         <meta name="author" content="caimaoy">
         
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    
     <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-forkmegithub/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
+    
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-forkmegithub/plugin.css">
+    
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
-        
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
-        
-    
-        
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
-        
-    
     
 
         
     
     
-    <link rel="next" href="../RobotFramework/RobotFramework.html" />
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../algorithm/algorithm.html" />
     
     
-    <link rel="prev" href="../python/python_logging.html" />
+    <link rel="prev" href="python_logging.html" />
     
 
-        
     </head>
     <body>
         
+<div class="book">
+    <div class="book-summary">
         
-    <div class="book"
-        data-level="1.10"
-        data-chapter-title="Python celery"
-        data-filepath="python/python_celery.md"
-        data-basepath=".."
-        data-revision="Mon Mar 27 2017 16:01:53 GMT+0800 (CST)"
-        data-innerlanguage="">
-    
-
-<div class="book-summary">
-    <nav role="navigation">
-        <ul class="summary">
             
-            
-            
-                
-                <li>
-                    <a href="http://www.caimaoy.com" target="blank" class="custom-link">caimaoy&#39;s blog</a>
-                </li>
-            
-            
-
-            
-            <li class="divider"></li>
-            
-
-            
-    
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                        Introduction
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1" data-path="python/python.html">
-            
-                
-                    <a href="../python/python.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        Python
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.1" data-path="python/python_tips.html">
-            
-                
-                    <a href="../python/python_tips.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                        Python tips
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="python/python_virtualenv.html">
-            
-                
-                    <a href="../python/python_virtualenv.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                        Python virtualenv
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="python/python_pyzmq.html">
-            
-                
-                    <a href="../python/python_pyzmq.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                        Python pyzmq
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="python/python_sqlalchemy.html">
-            
-                
-                    <a href="../python/python_sqlalchemy.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.4.</b>
-                        
-                        Python sqlalchemy
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="python/python_execute.html">
-            
-                
-                    <a href="../python/python_execute.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.5.</b>
-                        
-                        Python execute
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="python/python_debug.html">
-            
-                
-                    <a href="../python/python_debug.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.</b>
-                        
-                        Python debug
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="python/python_decorator_cheat.html">
-            
-                
-                    <a href="../python/python_decorator_cheat.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.7.</b>
-                        
-                        Python decorator cheat
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8" data-path="python/python_timeit.html">
-            
-                
-                    <a href="../python/python_timeit.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.8.</b>
-                        
-                        Python timeit
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" data-path="python/python_logging.html">
-            
-                
-                    <a href="../python/python_logging.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.9.</b>
-                        
-                        Python logging
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.10" data-path="python/python_celery.html">
-            
-                
-                    <a href="../python/python_celery.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.10.</b>
-                        
-                        Python celery
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="RobotFramework/RobotFramework.html">
-            
-                
-                    <a href="../RobotFramework/RobotFramework.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        RobotFramework
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.1" data-path="RobotFramework/RobotFramework_access_variables.html">
-            
-                
-                    <a href="../RobotFramework/RobotFramework_access_variables.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.</b>
-                        
-                        RobotFramework access variables
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="mac_os/mac_os.html">
-            
-                
-                    <a href="../mac_os/mac_os.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        Mac OS
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="3.1" data-path="mac_os/mac_os_turn_off_the_rootless.html">
-            
-                
-                    <a href="../mac_os/mac_os_turn_off_the_rootless.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.1.</b>
-                        
-                        Mac OS Turn off the rootless
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.2" data-path="mac_os/mac_os_use_32_bits.html">
-            
-                
-                    <a href="../mac_os/mac_os_use_32_bits.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.2.</b>
-                        
-                        Mac OS use 32 bits
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="mac_os/mac_os_show_all_files.html">
-            
-                
-                    <a href="../mac_os/mac_os_show_all_files.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.3.</b>
-                        
-                        Mac OS show all files
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3.4" data-path="mac_os/mac_os_disk_usage.html">
-            
-                
-                    <a href="../mac_os/mac_os_disk_usage.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.4.</b>
-                        
-                        Mac OS Disk Usage
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="jenkins/jenkins.html">
-            
-                
-                    <a href="../jenkins/jenkins.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        Jenkins
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="gitbook/gitbook.html">
-            
-                
-                    <a href="../gitbook/gitbook.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        gitbook
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="6" data-path="domain/domain.html">
-            
-                
-                    <a href="../domain/domain.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>6.</b>
-                        
-                        domain
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7" data-path="nginx/nginx.html">
-            
-                
-                    <a href="../nginx/nginx.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.</b>
-                        
-                        nginx
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="8" data-path="oh_my_zsh/oh_my_zsh.html">
-            
-                
-                    <a href="../oh_my_zsh/oh_my_zsh.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>8.</b>
-                        
-                        Oh My ZSH
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9" data-path="util/tools.html">
-            
-                
-                    <a href="../util/tools.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.</b>
-                        
-                        Util
-                    </a>
-            
-            
-        </li>
-    
-
-
-            
-            <li class="divider"></li>
-            <li>
-                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                    Published with GitBook
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
 
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.caimaoy.com" target="_blank" class="custom-link">caimaoy's blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="python.html">
+            
+                <a href="python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="python_tips.html">
+            
+                <a href="python_tips.html">
+            
+                    
+                    Python tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="python_virtualenv.html">
+            
+                <a href="python_virtualenv.html">
+            
+                    
+                    Python virtualenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="python_pyzmq.html">
+            
+                <a href="python_pyzmq.html">
+            
+                    
+                    Python pyzmq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="python_sqlalchemy.html">
+            
+                <a href="python_sqlalchemy.html">
+            
+                    
+                    Python sqlalchemy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="python_execute.html">
+            
+                <a href="python_execute.html">
+            
+                    
+                    Python execute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="python_debug.html">
+            
+                <a href="python_debug.html">
+            
+                    
+                    Python debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="python_decorator_cheat.html">
+            
+                <a href="python_decorator_cheat.html">
+            
+                    
+                    Python decorator cheat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="python_timeit.html">
+            
+                <a href="python_timeit.html">
+            
+                    
+                    Python timeit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="python_logging.html">
+            
+                <a href="python_logging.html">
+            
+                    
+                    Python logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="python_celery.html">
+            
+                <a href="python_celery.html">
+            
+                    
+                    Python celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../algorithm/algorithm.html">
+            
+                <a href="../algorithm/algorithm.html">
+            
+                    
+                    Algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../algorithm/primefactors.html">
+            
+                <a href="../algorithm/primefactors.html">
+            
+                    
+                    prime factors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../RobotFramework/RobotFramework.html">
+            
+                <a href="../RobotFramework/RobotFramework.html">
+            
+                    
+                    RobotFramework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../RobotFramework/RobotFramework_access_variables.html">
+            
+                <a href="../RobotFramework/RobotFramework_access_variables.html">
+            
+                    
+                    RobotFramework access variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../mac_os/mac_os.html">
+            
+                <a href="../mac_os/mac_os.html">
+            
+                    
+                    Mac OS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../mac_os/mac_os_turn_off_the_rootless.html">
+            
+                <a href="../mac_os/mac_os_turn_off_the_rootless.html">
+            
+                    
+                    Mac OS Turn off the rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../mac_os/mac_os_use_32_bits.html">
+            
+                <a href="../mac_os/mac_os_use_32_bits.html">
+            
+                    
+                    Mac OS use 32 bits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../mac_os/mac_os_show_all_files.html">
+            
+                <a href="../mac_os/mac_os_show_all_files.html">
+            
+                    
+                    Mac OS show all files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../mac_os/mac_os_disk_usage.html">
+            
+                <a href="../mac_os/mac_os_disk_usage.html">
+            
+                    
+                    Mac OS Disk Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../jenkins/jenkins.html">
+            
+                <a href="../jenkins/jenkins.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../gitbook/gitbook.html">
+            
+                <a href="../gitbook/gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../domain/domain.html">
+            
+                <a href="../domain/domain.html">
+            
+                    
+                    domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../nginx/nginx.html">
+            
+                <a href="../nginx/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../oh_my_zsh/oh_my_zsh.html">
+            
+                <a href="../oh_my_zsh/oh_my_zsh.html">
+            
+                    
+                    Oh My ZSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../util/tools.html">
+            
+                <a href="../util/tools.html">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
     <div class="book-body">
-        <div class="body-inner">
-            <div class="book-header" role="navigation">
-    <!-- Actions Left -->
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
     
 
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >caimaoy_gitbook</a>
+        <a href=".." >Python celery</a>
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1" role="main">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-">
-                    
-                        <h1 id="python-celery">Python celery</h1>
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python-celery">Python celery</h1>
 <p><code>celery</code> &#x7684;&#x4ECB;&#x7ECD;&#x548C;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x6211;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8BF4;&#x4E86; <code>google</code><br>&#x6211;&#x8BF4;&#x8BF4;&#x5B83;&#x57FA;&#x4E8E;&#x7684; <code>AMQP</code> - Advanced Message Queuing Protocol<br>&#x5173;&#x952E;&#x89E3;&#x51B3;&#x4E00;&#x4E0B;&#x770B;&#x4E0D;&#x61C2;&#x7684; <code>celery</code> config</p>
 <pre><code>from kombu import Queue
 # CELERY_QUEUES = ( # &#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x961F;&#x5217;
@@ -536,70 +558,102 @@ task_routes = {
 </blockquote>
 <p>&#x518D;&#x9644;&#x4E0A; <a href="https://denibertovic.com/talks/celery-best-practices/" target="_blank">Celery Best Practices</a></p>
 
-                    
-                    </section>
-                
-                
-                </div>
-            </div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
         </div>
-
-        
-        <a href="../python/python_logging.html" class="navigation navigation-prev " aria-label="Previous page: Python logging"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../RobotFramework/RobotFramework.html" class="navigation navigation-next " aria-label="Next page: RobotFramework"><i class="fa fa-angle-right"></i></a>
-        
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
     </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="python_logging.html" class="navigation navigation-prev " aria-label="Previous page: Python logging">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../algorithm/algorithm.html" class="navigation navigation-next " aria-label="Next page: Algorithm">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
-<script src="../gitbook/app.js"></script>
+    </div>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-forkmegithub/plugin.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
-    
-
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"disqus":{"shortName":"caimaoygitbook","useIdentifier":false},"ga":{"token":"UA-58273323-3","configuration":"auto"},"forkmegithub":{"url":"https://github.com/caimaoy/caimaoy_gitbook","color":"gray"},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
-    gitbook.start(config);
-});
-</script>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python celery","level":"1.2.10","depth":2,"next":{"title":"Algorithm","level":"1.3","depth":1,"path":"algorithm/algorithm.md","ref":"algorithm/algorithm.md","articles":[{"title":"prime factors","level":"1.3.1","depth":2,"path":"algorithm/primefactors.md","ref":"algorithm/primefactors.md","articles":[]}]},"previous":{"title":"Python logging","level":"1.2.9","depth":2,"path":"python/python_logging.md","ref":"python/python_logging.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","forkmegithub","multipart","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"caimaoygitbook"},"livereload":{},"search":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-58273323-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"forkmegithub":{"color":"gray","url":"https://github.com/caimaoy/caimaoy_gitbook"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"caimaoy","theme":"default","githubHost":"https://github.com/caimaoy","author":"caimaoy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"caimaoy_gitbook","links":{"sidebar":{"caimaoy's blog":"http://www.caimaoy.com"},"sharing":{"google":"caimaoy","facebook":"caimaoy","twitter":"caimaoy","weibo":"caimaoy","all":"caimaoy"}},"gitbook":"*","description":"caimaoy's gitbook, 记录码农的点点滴滴"},"file":{"path":"python/python_celery.md","mtime":"2017-03-27T08:01:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-12T08:39:14.016Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
 
         
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-forkmegithub/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
     </body>
-    
 </html>
+
