@@ -3,8 +3,8 @@
     "description": "caimaoy's gitbook, 记录码农的点点滴滴",
     "author": "caimaoy",
     "github": "caimaoy",
-    "githubHost": "https://github.com/",
-    "plugins": ["disqus", "ga", "forkmegithub"],
+    "githubHost": "https://github.com/caimaoy",
+    "plugins": ["disqus", "ga", "forkmegithub", "multipart"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "caimaoygitbook"
