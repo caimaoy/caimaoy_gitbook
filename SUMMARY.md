@@ -13,6 +13,8 @@
     * [Python logging](python/python_logging.md)
     * [Python celery](python/python_celery.md)
     * [Python IP](python/python_get_ip.md)
+* [Javascript](javascript/javascript.md)
+    * [Javascript select](javascript/javascript_select.md)
 * [Algorithm](algorithm/algorithm.md)
     * [prime factors](algorithm/primefactors.md)
 * [RobotFramework](RobotFramework/RobotFramework.md)
