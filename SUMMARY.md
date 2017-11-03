@@ -29,6 +29,8 @@
 * [Jenkins](jenkins/jenkins.md)
 * [gitbook](gitbook/gitbook.md)
 * [domain](domain/domain.md)
+* [ops](ops/ops.md)
+    * [open max files process](ops/open_max_files_process.md)
 * [nginx](nginx/nginx.md)
 * [Oh My ZSH](oh_my_zsh/oh_my_zsh.md)
 * [Util](util/tools.md)
