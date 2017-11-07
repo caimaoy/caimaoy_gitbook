@@ -31,3 +31,12 @@
     ```
     更多的一行方法请参考 [Python官方文档](https://wiki.python.org/moin/Powerful%20Python%20One-Liners)
 
+
+- 优雅地分组
+
+    ```
+    def divide_into_groups(l, group_len):
+        return [a[i:i+group_len] for i in range(0, len(l), group_len)]
+
+    divide_into_groups(range(10), 3)
+    ```
