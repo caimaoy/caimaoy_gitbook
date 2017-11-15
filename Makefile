@@ -1,5 +1,7 @@
-.PHONY: run publish
+.PHONY: run publish init
 
+init:
+	gitbook init
 run:
 	gitbook serve
 publish:

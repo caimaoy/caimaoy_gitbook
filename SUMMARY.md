@@ -14,6 +14,7 @@
     * [Python celery](python/python_celery.md)
     * [Python IP](python/python_get_ip.md)
     * [Python interpreter](python/python_interpreter.md)
+    * [Python asyncio](python/python_asyncio.md)
 * [Javascript](javascript/javascript.md)
     * [Javascript select](javascript/javascript_select.md)
 * [Algorithm](algorithm/algorithm.md)
