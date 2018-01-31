@@ -14,3 +14,9 @@ ESTABLISHED 805
 FIN_WAIT2 1
 TIME_WAIT 4565
 ```
+
+附带 alias 配置
+```
+alias tcp='netstat -n | awk '"'"'/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'"'"''
+```
+
