@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Python decorator cheat · caimaoy_gitbook</title>
+        <title>Python pip · caimaoy_gitbook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="python_timeit.html" />
+    <link rel="next" href="../javascript/javascript.html" />
     
     
-    <link rel="prev" href="python_debug.html" />
+    <link rel="prev" href="python_asyncio.html" />
     
 
     </head>
@@ -215,7 +215,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.7" data-path="python_decorator_cheat.html">
+        <li class="chapter " data-level="1.2.7" data-path="python_decorator_cheat.html">
             
                 <a href="python_decorator_cheat.html">
             
@@ -306,7 +306,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.14" data-path="python_pip.html">
+        <li class="chapter active" data-level="1.2.14" data-path="python_pip.html">
             
                 <a href="python_pip.html">
             
@@ -708,7 +708,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Python decorator cheat</a>
+        <a href=".." >Python pip</a>
     </h1>
 </div>
 
@@ -723,30 +723,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="python-decorator-cheat">Python decorator cheat</h1>
+                                <h1 id="python-pip">Python pip</h1>
+<h2 id=""> </h2>
 <ul>
-<li>A decorator without arguments</li>
+<li>&#x4ECA;&#x5929;&#x5728;&#x4F7F;&#x7528; python protobuf &#x7684;&#x65F6;&#x5019;&#x9047;&#x5230;&#x4E86;&#x5982;&#x4E0B;&#x7684;&#x5F02;&#x5E38;  </li>
 </ul>
-<pre><code>def decorator(f):
-    @functools.wraps(f)
-    def wrapped(*args, **kwargs):
-        results = f(*args, **kwargs)
-        # do something
-        return results
-    return wrapped
+<pre><code>TypeError: Couldn&apos;t build proto file into descriptor pool!
+Invalid proto descriptor for file &quot;comm_head.proto&quot;:
+  comm_head.proto: A file with this name is already in the pool.
 </code></pre><ul>
-<li>A Decorator with arguments</li>
+<li>&#x89E3;&#x51B3;&#x65B9;&#x6848;</li>
+<li>&#x53C2;&#x8003;<ul>
+<li><a href="https://github.com/google/protobuf/issues/3002" target="_blank">https://github.com/google/protobuf/issues/3002</a></li>
+<li><a href="https://github.com/ValvePython/csgo/issues/8" target="_blank">https://github.com/ValvePython/csgo/issues/8</a></li>
 </ul>
-<pre><code>def decorator_args(a, b, c):
-    def decorator(f):
-        @functools.wraps(f)
-        def wrapped(*args, **kwargs):
-            results = f(*args, **kwargs)
-            # do something
-            return results
-        return wrapped
-    return decorator
-</code></pre>
+</li>
+</ul>
+<pre><code>pip uninstall protobuf
+pip install --no-binary=protobuf protobuf
+</code></pre><ul>
+<li>&#x95EE;&#x9898;&#x6765;&#x4E86;&#xFF1A; <code>requirement.txt</code> &#x5982;&#x4F55;&#x5199;&#xFF1F;</li>
+<li>&#x53C2;&#x8003;<ul>
+<li><a href="https://pip.pypa.io/en/stable/reference/pip_install/#per-requirement-overrides" target="_blank">https://pip.pypa.io/en/stable/reference/pip_install/#per-requirement-overrides</a></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Since version 7.0 pip supports controlling the command line options given to setup.py via requirements files. This disables the use of wheels (cached or otherwise) for that package, as setup.py does not exist for wheels.</p>
+<p>The --global-option and --install-option options are used to pass options to setup.py. For example:</p>
+<pre><code>FooProject &gt;= 1.2 --global-option=&quot;--no-user-cfg&quot; \
+                 --install-option=&quot;--prefix=&apos;/usr/local&apos;&quot; \
+                 --install-option=&quot;--no-compile&quot;
+</code></pre><p>The above translates roughly into running FooProject&apos;s setup.py script as:</p>
+<pre><code>python setup.py --no-user-cfg install --prefix=&apos;/usr/local&apos; --no-compile
+</code></pre><p>Note that the only way of giving more than one option to setup.py is through multiple --global-option and --install-option options, as shown in the example above. The value of each option is passed as a single argument to the setup.py script. Therefore, a line such as the following is invalid and would result in an installation error.</p>
+<pre><code># Invalid. Please use &apos;--install-option&apos; twice as shown above.
+FooProject &gt;= 1.2 --install-option=&quot;--prefix=/usr/local --no-compile&quot;
+</code></pre></blockquote>
+
                                 
                                 </section>
                             
@@ -773,12 +787,12 @@
 
             
                 
-                <a href="python_debug.html" class="navigation navigation-prev " aria-label="Previous page: Python debug">
+                <a href="python_asyncio.html" class="navigation navigation-prev " aria-label="Previous page: Python asyncio">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="python_timeit.html" class="navigation navigation-next " aria-label="Next page: Python timeit">
+                <a href="../javascript/javascript.html" class="navigation navigation-next " aria-label="Next page: Javascript">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -789,7 +803,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Python decorator cheat","level":"1.2.7","depth":2,"next":{"title":"Python timeit","level":"1.2.8","depth":2,"path":"python/python_timeit.md","ref":"python/python_timeit.md","articles":[]},"previous":{"title":"Python debug","level":"1.2.6","depth":2,"path":"python/python_debug.md","ref":"python/python_debug.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","forkmegithub","multipart","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"caimaoygitbook"},"livereload":{},"search":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-58273323-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"forkmegithub":{"color":"gray","url":"https://github.com/caimaoy/caimaoy_gitbook"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"caimaoy","theme":"default","githubHost":"https://github.com/caimaoy","author":"caimaoy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"caimaoy_gitbook","links":{"sidebar":{"caimaoy's blog":"http://www.caimaoy.com"},"sharing":{"google":"caimaoy","facebook":"caimaoy","twitter":"caimaoy","weibo":"caimaoy","all":"caimaoy"}},"gitbook":"*","description":"caimaoy's gitbook, 记录码农的点点滴滴"},"file":{"path":"python/python_decorator_cheat.md","mtime":"2016-12-26T07:34:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-07T06:20:09.142Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Python pip","level":"1.2.14","depth":2,"next":{"title":"Javascript","level":"1.3","depth":1,"path":"javascript/javascript.md","ref":"javascript/javascript.md","articles":[{"title":"Javascript select","level":"1.3.1","depth":2,"path":"javascript/javascript_select.md","ref":"javascript/javascript_select.md","articles":[]}]},"previous":{"title":"Python asyncio","level":"1.2.13","depth":2,"path":"python/python_asyncio.md","ref":"python/python_asyncio.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","ga","forkmegithub","multipart","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"caimaoygitbook"},"livereload":{},"search":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-58273323-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"forkmegithub":{"color":"gray","url":"https://github.com/caimaoy/caimaoy_gitbook"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"caimaoy","theme":"default","githubHost":"https://github.com/caimaoy","author":"caimaoy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"caimaoy_gitbook","links":{"sidebar":{"caimaoy's blog":"http://www.caimaoy.com"},"sharing":{"google":"caimaoy","facebook":"caimaoy","twitter":"caimaoy","weibo":"caimaoy","all":"caimaoy"}},"gitbook":"*","description":"caimaoy's gitbook, 记录码农的点点滴滴"},"file":{"path":"python/python_pip.md","mtime":"2018-05-07T06:21:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-07T06:20:09.142Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

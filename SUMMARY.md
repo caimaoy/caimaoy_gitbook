@@ -15,6 +15,7 @@
     * [Python IP](python/python_get_ip.md)
     * [Python interpreter](python/python_interpreter.md)
     * [Python asyncio](python/python_asyncio.md)
+    * [Python pip](python/python_pip.md)
 * [Javascript](javascript/javascript.md)
     * [Javascript select](javascript/javascript_select.md)
 * [Algorithm](algorithm/algorithm.md)
