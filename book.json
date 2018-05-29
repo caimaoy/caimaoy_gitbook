@@ -4,7 +4,7 @@
     "author": "caimaoy",
     "github": "caimaoy",
     "githubHost": "https://github.com/caimaoy",
-    "plugins": ["disqus", "ga", "forkmegithub", "multipart", "baidu", "xmr"],
+    "plugins": ["disqus", "ga", "forkmegithub", "multipart", "3-ba", "xmr"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "caimaoygitbook"
@@ -15,7 +15,7 @@
         "forkmegithub": {
               "url": "https://github.com/caimaoy/caimaoy_gitbook"
         },
-        "baidu": {
+        "3-ba": {
               "token": "a67e94481d0e7e12ed2144c724c966ed"
         }
     },
