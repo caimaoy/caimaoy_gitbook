@@ -54,3 +54,15 @@ def ping_connection(connection, branch):
         # restore "close with result"
         connection.should_close_with_result = save_should_close_with_result
 ```
+
+
+
+## create_time 和 update_time 配置
+
+```
+from sqlalchemy.dialects.mysql import TIMESTAMP
+from sqlalchemy import Column, func
+
+FuiCreateTime = Column(TIMESTAMP, server_default=func.now())
+FuiUpdateTime = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
+```
