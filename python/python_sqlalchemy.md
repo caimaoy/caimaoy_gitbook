@@ -65,4 +65,5 @@ from sqlalchemy import Column, func
 
 FuiCreateTime = Column(TIMESTAMP, server_default=func.now())
 FuiUpdateTime = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
+FuiUpdateTimeServerSide = Column(TIMESTAMP, server_default=func.now(), server_onupdate=func.now())
 ```
