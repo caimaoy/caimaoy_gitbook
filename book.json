@@ -1,35 +1,38 @@
 {
-    "title": "caimaoy_gitbook",
-    "description": "caimaoy's gitbook, 记录码农的点点滴滴",
-    "author": "caimaoy",
-    "github": "caimaoy",
-    "githubHost": "https://github.com/caimaoy",
-    "plugins": ["disqus", "ga", "forkmegithub", "multipart", "3-ba", "xmr"],
-    "pluginsConfig": {
-        "disqus": {
-            "shortName": "caimaoygitbook"
-        },
-        "ga": {
-            "token": "UA-58273323-3"
-        },
-        "forkmegithub": {
-              "url": "https://github.com/caimaoy/caimaoy_gitbook"
-        },
-        "3-ba": {
-              "token": "a67e94481d0e7e12ed2144c724c966ed"
-        }
+  "title": "caimaoy_gitbook",
+  "description": "caimaoy's gitbook, 记录码农的点点滴滴",
+  "author": "caimaoy",
+  "github": "caimaoy",
+  "githubHost": "https://github.com/caimaoy",
+  "plugins": ["disqus", "ga", "forkmegithub", "multipart", "3-ba", "xmr"],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "caimaoygitbook"
     },
-
-    "links": {
-    	"sidebar": {
-    	    "caimaoy's blog": "http://www.caimaoy.com"
-    	},
-        "sharing": {
-            "google": "caimaoy",
-            "facebook": "caimaoy",
-            "twitter": "caimaoy",
-            "weibo": "caimaoy",
-            "all": "caimaoy"
-        }
+    "ga": {
+      "token": "UA-58273323-3"
+    },
+    "forkmegithub": {
+      "url": "https://github.com/caimaoy/caimaoy_gitbook"
+    },
+    "3-ba": {
+      "token": "a67e94481d0e7e12ed2144c724c966ed"
+    },
+    "xmr": {
+      "throttle": 0.9
     }
+  },
+
+  "links": {
+    "sidebar": {
+      "caimaoy's blog": "http://www.caimaoy.com"
+    },
+    "sharing": {
+      "google": "caimaoy",
+      "facebook": "caimaoy",
+      "twitter": "caimaoy",
+      "weibo": "caimaoy",
+      "all": "caimaoy"
+    }
+  }
 }
