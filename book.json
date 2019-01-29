@@ -4,7 +4,15 @@
   "author": "caimaoy",
   "github": "caimaoy",
   "githubHost": "https://github.com/caimaoy",
-  "plugins": ["disqus", "ga", "forkmegithub", "multipart", "3-ba", "xmr"],
+  "plugins": [
+    "disqus",
+    "ga",
+    "forkmegithub",
+    "multipart",
+    "3-ba",
+    "xmr",
+    "busuanzi"
+  ],
   "pluginsConfig": {
     "disqus": {
       "shortName": "caimaoygitbook"
@@ -20,6 +28,10 @@
     },
     "xmr": {
       "throttle": 0.9
+    },
+    "page-footer-ex": {
+      "copyright": "Copyright © 2016 - 2019 caimaoy. All Rights Reserved",
+      "markdown": false
     }
   },
 
