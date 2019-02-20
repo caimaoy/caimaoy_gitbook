@@ -46,7 +46,7 @@ flask 如何使用 Sentry?
 
 #### 方案一
 
-<https://github.com/getsentry/raven-python/issues/457>, 是的我们一定不是第一个遇到这个问题的人
+<https://github.com/getsentry/raven-python/issues/457>, 我们一定不是第一个遇到这个问题的人
 ```
 @app.before_request
 def enable_form_raw_cache():
@@ -79,7 +79,7 @@ def enable_form_raw_cache():
 更多的思考
 
 - 为什么会有不是 utf8 编码的数据？
-    这个是开玩笑了，因为我们要接受 GBK 编码的 XML 数据，这个的根本原因我们就细谈了，这里是开个玩笑
+    - 这个是开玩笑了，因为我们要接受 GBK 编码的 XML 数据，这个的根本原因我们就不细谈了。
 
 - 为什么 flask 不缓存所有的原始对象？
-    这应该是个好问题，可能的原因，太多的原始对象消耗内存。同时因为已经将请求数据从流对象中读出，然后结构化了，也就没有必要保存原始对象了
+    - 这应该是个好问题，可能的原因，太多的原始对象消耗内存。同时因为已经将请求数据从流对象中读出，然后结构化了，也就没有必要保存原始对象了
